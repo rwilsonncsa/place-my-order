@@ -1,10 +1,12 @@
 import QUnit from 'steal-qunit';
+import restaurantStore from 'place-my-order/models/fixtures/restaurant';
 import { ViewModel } from './new';
 
 // ViewModel unit tests
 QUnit.module('place-my-order/order/new');
 
-QUnit.test('Has message', function(){
+QUnit.test('Has slug', function(){
   var vm = new ViewModel();
-  QUnit.equal(vm.attr('message'), 'This is the pmo-order-new component');
+  vm.attr('slug', 'fred');
+  QUnit.equal(vm.attr('slug'), 'fred');
 });
