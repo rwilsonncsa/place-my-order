@@ -11,6 +11,7 @@
   "scripts": {
     "api": "place-my-order-api --port 7070",
     "test": "testee src/test.html --browsers firefox --reporter Spec",
+    "citest": "testee src/test.html --browsers phantom --reporter Spec",
     "start": "can-serve --proxy http://localhost:7070 --port 8080",
     "develop": "can-serve --develop --proxy http://localhost:7070 --port 8080",
     "document": "documentjs",
@@ -47,6 +48,7 @@
     "done-css": "^1.1.15",
     "generator-donejs": "^0.3.5",
     "jquery": "~2.1.4",
+    "phantomjs": "^2.1.2",
     "place-my-order-api": "^0.4.4",
     "place-my-order-assets": "^0.1.6",
     "steal": "^0.12.9",
